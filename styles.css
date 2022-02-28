@@ -123,6 +123,7 @@ p.review {
     grid-template-areas: 
     "grad1 grad1 grad2 grad5"
     "grad3 grad4 grad4 grad5";
+    margin: 130px;
 }
 
 section.grad1 {
