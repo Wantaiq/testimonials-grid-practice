@@ -29,8 +29,8 @@ main.testimonials-grid {
 }
 
 section {
-    border-radius: 10px;
-    padding: 33px;
+    border-radius: 15px;
+    padding: 20px;
     font-size: 13px;
     font-weight: 600;
 }
@@ -57,7 +57,6 @@ section {
 
 section.grad1 {
     background-color: var(--moderate-violet);
-    margin-top: 40px;
     background-image: url("./images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-position: 90% top;
@@ -105,38 +104,38 @@ p.review {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    position: absolute;
-    bottom: 0px;
-}
-
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    position: absolute;
+    right: 2em;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 961px) {
+    main.testimonials-grid  {
+    margin-top: 120px;
+    grid-template-areas: 
+    "grad1 grad1 grad2 grad5"
+    "grad3 grad4 grad4 grad5";
+}
+
+section.grad1 {
+    grid-area: grad1;
+}
+section.grad2 {
+    grid-area: grad2;
+}
+section.grad3 {
+    grid-area: grad3;
+}
+section.grad4 {
+    grid-area: grad4;
+}
+section.grad5 {
+    grid-area: grad5;
+}
+    
 }
